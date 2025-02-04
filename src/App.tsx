@@ -41,7 +41,7 @@ const App: React.FC = () => {
       "wss://bskiixhsfl.execute-api.ap-southeast-2.amazonaws.com/dev"
     );
 
-    const handleOpen = (event: Event): void => {
+    const handleOpen = (): void => {
       console.log("Connected to WebSocket server");
       setConnected(true);
     };
@@ -61,7 +61,7 @@ const App: React.FC = () => {
       }
     };
 
-    const handleClose = (event: CloseEvent): void => {
+    const handleClose = (): void => {
       console.log("Disconnected from WebSocket server");
       setConnected(false);
     };
